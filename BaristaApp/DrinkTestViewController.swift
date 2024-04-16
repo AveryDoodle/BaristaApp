@@ -8,22 +8,49 @@
 import UIKit
 
 class DrinkTestViewController: UIViewController {
+    
+    @IBOutlet weak var drinkOutlet: UILabel!
+    
+    @IBOutlet weak var titleOutlet: UILabel!
+    
+    
+    @IBOutlet weak var addItemThing: UIImageView!
+    
+    let shouldShowImage = false
+
+    
+    static var things = [""]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        titleOutlet.text = "Drink: \(AddQuizViewController.name)!"
+        //print(titleOutlet.text!)
+        let things = DrinkTestViewController.things
+        let joinedString = things.joined(separator: "\n")
+        drinkOutlet.text = "\(joinedString)"
+        print(joinedString)
+        addItemThing.isHidden = true
+        if things.count >= 2 {
+       
+            if shouldShowImage {
+           
+                addItemThing.isHidden = false
+            } else {
+           
+                addItemThing.isHidden = false
+            }
+        }       // drinkOutlet.text = "\(DrinkTestViewController.things)"
+        print(DrinkTestViewController.things)
+        print("correct recipe \(AddQuizViewController.recipe)")
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func checkAction(_ sender: Any) {
+        
     }
-    */
+    
+    
+
+    
 
 }

@@ -17,6 +17,13 @@
 		1D5AFD252B98BDD9005FA285 /* BaristaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD242B98BDD9005FA285 /* BaristaAppTests.swift */; };
 		1D5AFD2F2B98BDD9005FA285 /* BaristaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD2E2B98BDD9005FA285 /* BaristaAppUITests.swift */; };
 		1D5AFD312B98BDD9005FA285 /* BaristaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD302B98BDD9005FA285 /* BaristaAppUITestsLaunchTests.swift */; };
+		1D5AFD422B9F5155005FA285 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD412B9F5155005FA285 /* QuizViewController.swift */; };
+		1D5AFD442B9F5168005FA285 /* AddQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD432B9F5168005FA285 /* AddQuizViewController.swift */; };
+		1D5AFD462B9F5183005FA285 /* DrinkTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD452B9F5183005FA285 /* DrinkTestViewController.swift */; };
+		1D5AFD482B9F519A005FA285 /* MilkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD472B9F519A005FA285 /* MilkViewController.swift */; };
+		1D5AFD4A2B9F51AC005FA285 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD492B9F51AC005FA285 /* OtherViewController.swift */; };
+		1D5AFD4C2B9F51BB005FA285 /* SyrupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD4B2B9F51BB005FA285 /* SyrupViewController.swift */; };
+		1D5AFD4E2BA88CD7005FA285 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD4D2BA88CD7005FA285 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,17 @@
 		1D5AFD2A2B98BDD9005FA285 /* BaristaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaristaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D5AFD2E2B98BDD9005FA285 /* BaristaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaristaAppUITests.swift; sourceTree = "<group>"; };
 		1D5AFD302B98BDD9005FA285 /* BaristaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaristaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1D5AFD3D2B98C1AD005FA285 /* Mainstay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mainstay.ttf; sourceTree = "<group>"; };
+		1D5AFD3E2B98C25A005FA285 /* Hello.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hello.otf; sourceTree = "<group>"; };
+		1D5AFD3F2B98C261005FA285 /* Hello.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hello.ttf; sourceTree = "<group>"; };
+		1D5AFD402B98C30F005FA285 /* ThingsRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThingsRegular.ttf; sourceTree = "<group>"; };
+		1D5AFD412B9F5155005FA285 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		1D5AFD432B9F5168005FA285 /* AddQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuizViewController.swift; sourceTree = "<group>"; };
+		1D5AFD452B9F5183005FA285 /* DrinkTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTestViewController.swift; sourceTree = "<group>"; };
+		1D5AFD472B9F519A005FA285 /* MilkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkViewController.swift; sourceTree = "<group>"; };
+		1D5AFD492B9F51AC005FA285 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		1D5AFD4B2B9F51BB005FA285 /* SyrupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyrupViewController.swift; sourceTree = "<group>"; };
+		1D5AFD4D2BA88CD7005FA285 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +123,21 @@
 				1D5AFD0C2B98BDD8005FA285 /* SceneDelegate.swift */,
 				1D5AFD0E2B98BDD8005FA285 /* ViewController.swift */,
 				1D5AFD102B98BDD8005FA285 /* Main.storyboard */,
+				1D5AFD4D2BA88CD7005FA285 /* DetailsViewController.swift */,
+				1D5AFD4B2B9F51BB005FA285 /* SyrupViewController.swift */,
+				1D5AFD492B9F51AC005FA285 /* OtherViewController.swift */,
+				1D5AFD472B9F519A005FA285 /* MilkViewController.swift */,
+				1D5AFD452B9F5183005FA285 /* DrinkTestViewController.swift */,
+				1D5AFD432B9F5168005FA285 /* AddQuizViewController.swift */,
+				1D5AFD412B9F5155005FA285 /* QuizViewController.swift */,
 				1D5AFD162B98BDD9005FA285 /* Assets.xcassets */,
 				1D5AFD182B98BDD9005FA285 /* LaunchScreen.storyboard */,
 				1D5AFD1B2B98BDD9005FA285 /* Info.plist */,
 				1D5AFD132B98BDD8005FA285 /* BaristaApp.xcdatamodeld */,
+				1D5AFD3D2B98C1AD005FA285 /* Mainstay.ttf */,
+				1D5AFD3E2B98C25A005FA285 /* Hello.otf */,
+				1D5AFD3F2B98C261005FA285 /* Hello.ttf */,
+				1D5AFD402B98C30F005FA285 /* ThingsRegular.ttf */,
 			);
 			path = BaristaApp;
 			sourceTree = "<group>";
@@ -262,9 +291,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D5AFD0F2B98BDD8005FA285 /* ViewController.swift in Sources */,
+				1D5AFD4A2B9F51AC005FA285 /* OtherViewController.swift in Sources */,
+				1D5AFD442B9F5168005FA285 /* AddQuizViewController.swift in Sources */,
+				1D5AFD4E2BA88CD7005FA285 /* DetailsViewController.swift in Sources */,
+				1D5AFD422B9F5155005FA285 /* QuizViewController.swift in Sources */,
+				1D5AFD462B9F5183005FA285 /* DrinkTestViewController.swift in Sources */,
 				1D5AFD0B2B98BDD8005FA285 /* AppDelegate.swift in Sources */,
+				1D5AFD4C2B9F51BB005FA285 /* SyrupViewController.swift in Sources */,
 				1D5AFD152B98BDD8005FA285 /* BaristaApp.xcdatamodeld in Sources */,
 				1D5AFD0D2B98BDD8005FA285 /* SceneDelegate.swift in Sources */,
+				1D5AFD482B9F519A005FA285 /* MilkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

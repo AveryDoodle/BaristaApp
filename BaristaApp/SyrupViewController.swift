@@ -7,23 +7,56 @@
 
 import UIKit
 
-class SyrupViewController: UIViewController {
-
+class SyrupViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    
+    @IBOutlet weak var syrupPickerView: UIPickerView!
+    
+    @IBOutlet weak var pumpsOutlet: UITextField!
+    
+    
+   static var Syrups = ["Vanilla", "Blueberry", "Mint", "Chocolate", "Strawberry"]
+    var selectedSyrup = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       syrupPickerView.delegate = self
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
     }
-    */
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if component == 0{
+            return SyrupViewController.Syrups.count
+        }
+        return 0
 
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if component == 0{
+            return SyrupViewController.Syrups[row]
+        }
+        return ""
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if component == 0{
+            selectedSyrup = SyrupViewController.Syrups[row]
+        }
+    }
+
+    @IBAction func addAction(_ sender: Any) {
+        print("\(pumpsOutlet.text!) pumps of \(selectedSyrup)")
+        var pumps = pumpsOutlet.text!
+        pumpsOutlet.text = " "
+        DrinkTestViewController.things.append(("\(pumps) pumps of \(selectedSyrup)"))
+    }
+    
+    
+    
 }
