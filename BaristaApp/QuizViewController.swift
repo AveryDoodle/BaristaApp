@@ -12,6 +12,7 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableOutlet: UITableView!
     
     static var name = "test"
+   
 
     override func viewDidLoad() {
         tableOutlet.dataSource = self
@@ -20,6 +21,10 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
 
        
     }
+    override func viewWillAppear(_ animated: Bool) {
+        tableOutlet.reloadData()
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return AddQuizViewController.name.count

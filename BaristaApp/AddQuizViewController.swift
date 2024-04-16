@@ -25,6 +25,10 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     static var recipe = [""]
     static var name = [""]
+    var drinks = [Drink]()
+    var tempSyrup : String
+    var tempMilk : String
+    var tempOther : String
     
     var selectedSyrup = ""
     var selectedMilk = ""
@@ -99,11 +103,14 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         print("\(milkOutlet.text!) ounces of \(selectedMilk) milk")
         AddQuizViewController.recipe.append("\(milkOutlet.text!) ounces of \(selectedMilk) milk")
         milkOutlet.text = " "
+        tempMilk = "\(milkOutlet.text!) ounces of \(selectedMilk) milk"
+        
     }
     
     @IBAction func addSyrup(_ sender: Any) {
         print("\(syrupOutlet.text!) pumps of \(selectedSyrup)")
         AddQuizViewController.recipe.append("\(syrupOutlet.text!) pumps of \(selectedSyrup)")
+        tempSyrup = "\(syrupOutlet.text!) pumps of \(selectedSyrup)"
         syrupOutlet.text = " "
         
     }
@@ -114,6 +121,7 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         print(AddQuizViewController.recipe)
         AddQuizViewController.name.append(nameOutlet.text!)
         //nameOutlet.text = " "
+        //Drink(name: tempSyrup, syrup: tempSyrup, milk: <#T##String#>, other: <#T##String#>)
     }
     
     
@@ -121,6 +129,7 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         print("\(OtherOutlet.text!) pumps of \(selectedThing)")
         AddQuizViewController.recipe.append("\(OtherOutlet.text!) pumps of \(selectedThing)")
         OtherOutlet.text = " "
+        tempOther = "\(OtherOutlet.text!) pumps of \(selectedThing)"
     }
     
     

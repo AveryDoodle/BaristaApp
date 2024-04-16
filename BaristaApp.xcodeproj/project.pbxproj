@@ -24,6 +24,7 @@
 		1D5AFD4A2B9F51AC005FA285 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD492B9F51AC005FA285 /* OtherViewController.swift */; };
 		1D5AFD4C2B9F51BB005FA285 /* SyrupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD4B2B9F51BB005FA285 /* SyrupViewController.swift */; };
 		1D5AFD4E2BA88CD7005FA285 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD4D2BA88CD7005FA285 /* DetailsViewController.swift */; };
+		C895FBF72BCEC4AB00C6E2D7 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = C895FBF62BCEC4AB00C6E2D7 /* Drink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		1D5AFD492B9F51AC005FA285 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		1D5AFD4B2B9F51BB005FA285 /* SyrupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyrupViewController.swift; sourceTree = "<group>"; };
 		1D5AFD4D2BA88CD7005FA285 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		C895FBF62BCEC4AB00C6E2D7 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				1D5AFD0C2B98BDD8005FA285 /* SceneDelegate.swift */,
 				1D5AFD0E2B98BDD8005FA285 /* ViewController.swift */,
 				1D5AFD102B98BDD8005FA285 /* Main.storyboard */,
+				C895FBF62BCEC4AB00C6E2D7 /* Drink.swift */,
 				1D5AFD4D2BA88CD7005FA285 /* DetailsViewController.swift */,
 				1D5AFD4B2B9F51BB005FA285 /* SyrupViewController.swift */,
 				1D5AFD492B9F51AC005FA285 /* OtherViewController.swift */,
@@ -300,6 +303,7 @@
 				1D5AFD4C2B9F51BB005FA285 /* SyrupViewController.swift in Sources */,
 				1D5AFD152B98BDD8005FA285 /* BaristaApp.xcdatamodeld in Sources */,
 				1D5AFD0D2B98BDD8005FA285 /* SceneDelegate.swift in Sources */,
+				C895FBF72BCEC4AB00C6E2D7 /* Drink.swift in Sources */,
 				1D5AFD482B9F519A005FA285 /* MilkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
