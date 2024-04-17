@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D13BD522BD0163E00148602 /* Mainstay.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D5AFD3D2B98C1AD005FA285 /* Mainstay.ttf */; };
+		1D13BD532BD0164100148602 /* Hello.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D5AFD3F2B98C261005FA285 /* Hello.ttf */; };
+		1D13BD542BD0164300148602 /* ThingsRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D5AFD402B98C30F005FA285 /* ThingsRegular.ttf */; };
 		1D5AFD0B2B98BDD8005FA285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD0A2B98BDD8005FA285 /* AppDelegate.swift */; };
 		1D5AFD0D2B98BDD8005FA285 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD0C2B98BDD8005FA285 /* SceneDelegate.swift */; };
 		1D5AFD0F2B98BDD8005FA285 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD0E2B98BDD8005FA285 /* ViewController.swift */; };
@@ -60,7 +63,6 @@
 		1D5AFD2E2B98BDD9005FA285 /* BaristaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaristaAppUITests.swift; sourceTree = "<group>"; };
 		1D5AFD302B98BDD9005FA285 /* BaristaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaristaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1D5AFD3D2B98C1AD005FA285 /* Mainstay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mainstay.ttf; sourceTree = "<group>"; };
-		1D5AFD3E2B98C25A005FA285 /* Hello.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hello.otf; sourceTree = "<group>"; };
 		1D5AFD3F2B98C261005FA285 /* Hello.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hello.ttf; sourceTree = "<group>"; };
 		1D5AFD402B98C30F005FA285 /* ThingsRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThingsRegular.ttf; sourceTree = "<group>"; };
 		1D5AFD412B9F5155005FA285 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
@@ -138,7 +140,6 @@
 				1D5AFD1B2B98BDD9005FA285 /* Info.plist */,
 				1D5AFD132B98BDD8005FA285 /* BaristaApp.xcdatamodeld */,
 				1D5AFD3D2B98C1AD005FA285 /* Mainstay.ttf */,
-				1D5AFD3E2B98C25A005FA285 /* Hello.otf */,
 				1D5AFD3F2B98C261005FA285 /* Hello.ttf */,
 				1D5AFD402B98C30F005FA285 /* ThingsRegular.ttf */,
 			);
@@ -267,7 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D5AFD1A2B98BDD9005FA285 /* LaunchScreen.storyboard in Resources */,
+				1D13BD532BD0164100148602 /* Hello.ttf in Resources */,
+				1D13BD542BD0164300148602 /* ThingsRegular.ttf in Resources */,
 				1D5AFD172B98BDD9005FA285 /* Assets.xcassets in Resources */,
+				1D13BD522BD0163E00148602 /* Mainstay.ttf in Resources */,
 				1D5AFD122B98BDD8005FA285 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

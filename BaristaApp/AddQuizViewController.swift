@@ -26,9 +26,9 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     static var recipe = [""]
     static var name = [""]
     var drinks = [Drink]()
-    var tempSyrup : String
-    var tempMilk : String
-    var tempOther : String
+    var tempSyrup = ""
+    var tempMilk = ""
+    var tempOther = ""
     
     var selectedSyrup = ""
     var selectedMilk = ""
