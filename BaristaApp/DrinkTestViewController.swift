@@ -24,6 +24,10 @@ class DrinkTestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+      
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         titleOutlet.text = "Drink: \(AddQuizViewController.name)!"
         //print(titleOutlet.text!)
         let things = DrinkTestViewController.things
