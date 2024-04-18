@@ -13,8 +13,12 @@ class DrinkTestViewController: UIViewController {
     
     @IBOutlet weak var titleOutlet: UILabel!
     
-    
+    //finished coffee
     @IBOutlet weak var addItemThing: UIImageView!
+    
+    
+    @IBOutlet weak var syrupThing: UIImageView!
+    
     
     let shouldShowImage = false
 
@@ -34,16 +38,37 @@ class DrinkTestViewController: UIViewController {
         let joinedString = things.joined(separator: "\n")
         drinkOutlet.text = "\(joinedString)"
         print(joinedString)
-        addItemThing.isHidden = true
+        addItemThing.isHidden = false
+        syrupThing.isHidden = false
         if things.count >= 2 {
-       
-            if shouldShowImage {
-           
-                addItemThing.isHidden = false
-            } else {
-           
-                addItemThing.isHidden = false
+            if things.contains("Pumps"){
+                let showing = 0
+                
+                
+                switch showing{
+                case 0:
+                    syrupThing.isHidden = true
+                    print("showing Syrup")
+                case 1:
+                    addItemThing.isHidden = true
+                    print("nope")
+                default:
+                    addItemThing.isHidden = true
+                    print("nope")
+                }
+            } else{
+                print("no")
             }
+           // addItemThing.isHidden = true
+            
+//
+//            if shouldShowImage {
+//           
+//                addItemThing.isHidden = false
+//            } else {
+//           
+//                addItemThing.isHidden = false
+//            }
         }       // drinkOutlet.text = "\(DrinkTestViewController.things)"
     }
     
