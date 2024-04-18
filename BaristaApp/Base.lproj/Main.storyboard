@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LBC-7u-pnA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LBC-7u-pnA">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -136,13 +136,15 @@
                     <navigationItem key="navigationItem" id="SEs-KZ-Tib">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="9Af-wz-GrF">
                             <connections>
-                                <segue destination="v8G-L2-XD2" kind="show" id="H6x-fL-Fgp"/>
+                                <action selector="addAction:" destination="ujQ-9w-qFH" id="EH2-xB-yUF"/>
+                                <segue destination="v8G-L2-XD2" kind="show" identifier="toAdd" id="H6x-fL-Fgp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableOutlet" destination="SyU-9M-gWI" id="cTo-dr-eWa"/>
                         <segue destination="1hp-iM-HVh" kind="show" identifier="MoreDetail" id="8qu-9O-eMX"/>
+                        <segue destination="v8G-L2-XD2" kind="show" id="FA8-Ti-XqV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ia1-Yh-xoZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -585,6 +587,9 @@
             <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="H6x-fL-Fgp"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="checkmark.gobackward" catalog="system" width="119" height="128"/>
         <image name="coffee" width="216" height="216"/>
