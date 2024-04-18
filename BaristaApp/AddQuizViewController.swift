@@ -30,7 +30,10 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     var tempSyrup = ""
     var tempMilk = ""
     var tempOther = ""
+<<<<<<< HEAD
     weak var delegate : QuizViewController!
+=======
+>>>>>>> main
     
     var selectedSyrup = ""
     var selectedMilk = ""

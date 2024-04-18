@@ -15,7 +15,7 @@ class SyrupViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     @IBOutlet weak var pumpsOutlet: UITextField!
     
     
-   static var Syrups = ["Vanilla", "Blueberry", "Mint", "Chocolate", "Strawberry"]
+    static var Syrups = ["Vanilla", "Caramel", "Blueberry", "Mint", "Chocolate", "Strawberry"]
     var selectedSyrup = ""
     
     override func viewDidLoad() {

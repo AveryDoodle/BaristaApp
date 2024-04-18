@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D13BD522BD0163E00148602 /* Mainstay.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D5AFD3D2B98C1AD005FA285 /* Mainstay.ttf */; };
+		1D13BD532BD0164100148602 /* Hello.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D5AFD3F2B98C261005FA285 /* Hello.ttf */; };
+		1D13BD542BD0164300148602 /* ThingsRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D5AFD402B98C30F005FA285 /* ThingsRegular.ttf */; };
 		1D5AFD0B2B98BDD8005FA285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD0A2B98BDD8005FA285 /* AppDelegate.swift */; };
 		1D5AFD0D2B98BDD8005FA285 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD0C2B98BDD8005FA285 /* SceneDelegate.swift */; };
 		1D5AFD0F2B98BDD8005FA285 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD0E2B98BDD8005FA285 /* ViewController.swift */; };
@@ -24,6 +27,7 @@
 		1D5AFD4A2B9F51AC005FA285 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD492B9F51AC005FA285 /* OtherViewController.swift */; };
 		1D5AFD4C2B9F51BB005FA285 /* SyrupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD4B2B9F51BB005FA285 /* SyrupViewController.swift */; };
 		1D5AFD4E2BA88CD7005FA285 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AFD4D2BA88CD7005FA285 /* DetailsViewController.swift */; };
+		1D8C41072BD1643600108A74 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8C41062BD1643600108A74 /* CheckViewController.swift */; };
 		C895FBF72BCEC4AB00C6E2D7 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = C895FBF62BCEC4AB00C6E2D7 /* Drink.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +64,6 @@
 		1D5AFD2E2B98BDD9005FA285 /* BaristaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaristaAppUITests.swift; sourceTree = "<group>"; };
 		1D5AFD302B98BDD9005FA285 /* BaristaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaristaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1D5AFD3D2B98C1AD005FA285 /* Mainstay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mainstay.ttf; sourceTree = "<group>"; };
-		1D5AFD3E2B98C25A005FA285 /* Hello.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hello.otf; sourceTree = "<group>"; };
 		1D5AFD3F2B98C261005FA285 /* Hello.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hello.ttf; sourceTree = "<group>"; };
 		1D5AFD402B98C30F005FA285 /* ThingsRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThingsRegular.ttf; sourceTree = "<group>"; };
 		1D5AFD412B9F5155005FA285 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 		1D5AFD492B9F51AC005FA285 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		1D5AFD4B2B9F51BB005FA285 /* SyrupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyrupViewController.swift; sourceTree = "<group>"; };
 		1D5AFD4D2BA88CD7005FA285 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		1D8C41062BD1643600108A74 /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
 		C895FBF62BCEC4AB00C6E2D7 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +129,7 @@
 				1D5AFD0C2B98BDD8005FA285 /* SceneDelegate.swift */,
 				1D5AFD0E2B98BDD8005FA285 /* ViewController.swift */,
 				1D5AFD102B98BDD8005FA285 /* Main.storyboard */,
+				1D8C41062BD1643600108A74 /* CheckViewController.swift */,
 				C895FBF62BCEC4AB00C6E2D7 /* Drink.swift */,
 				1D5AFD4D2BA88CD7005FA285 /* DetailsViewController.swift */,
 				1D5AFD4B2B9F51BB005FA285 /* SyrupViewController.swift */,
@@ -138,7 +143,6 @@
 				1D5AFD1B2B98BDD9005FA285 /* Info.plist */,
 				1D5AFD132B98BDD8005FA285 /* BaristaApp.xcdatamodeld */,
 				1D5AFD3D2B98C1AD005FA285 /* Mainstay.ttf */,
-				1D5AFD3E2B98C25A005FA285 /* Hello.otf */,
 				1D5AFD3F2B98C261005FA285 /* Hello.ttf */,
 				1D5AFD402B98C30F005FA285 /* ThingsRegular.ttf */,
 			);
@@ -267,7 +271,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D5AFD1A2B98BDD9005FA285 /* LaunchScreen.storyboard in Resources */,
+				1D13BD532BD0164100148602 /* Hello.ttf in Resources */,
+				1D13BD542BD0164300148602 /* ThingsRegular.ttf in Resources */,
 				1D5AFD172B98BDD9005FA285 /* Assets.xcassets in Resources */,
+				1D13BD522BD0163E00148602 /* Mainstay.ttf in Resources */,
 				1D5AFD122B98BDD8005FA285 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +306,7 @@
 				1D5AFD4E2BA88CD7005FA285 /* DetailsViewController.swift in Sources */,
 				1D5AFD422B9F5155005FA285 /* QuizViewController.swift in Sources */,
 				1D5AFD462B9F5183005FA285 /* DrinkTestViewController.swift in Sources */,
+				1D8C41072BD1643600108A74 /* CheckViewController.swift in Sources */,
 				1D5AFD0B2B98BDD8005FA285 /* AppDelegate.swift in Sources */,
 				1D5AFD4C2B9F51BB005FA285 /* SyrupViewController.swift in Sources */,
 				1D5AFD152B98BDD8005FA285 /* BaristaApp.xcdatamodeld in Sources */,
