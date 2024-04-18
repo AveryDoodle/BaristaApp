@@ -45,12 +45,11 @@ class DrinkTestViewController: UIViewController {
                 addItemThing.isHidden = false
             }
         }       // drinkOutlet.text = "\(DrinkTestViewController.things)"
-        print(DrinkTestViewController.things)
-        print("correct recipe \(AddQuizViewController.recipe)")
     }
     
     @IBAction func checkAction(_ sender: Any) {
-        
+        print(DrinkTestViewController.things)
+        print("correct recipe \(AddQuizViewController.recipe)")
     }
     
     
