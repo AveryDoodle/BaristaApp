@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Hello.otf">
+        <array key="Hello.ttf">
             <string>HelloRegular</string>
         </array>
         <array key="ThingsRegular.ttf">
@@ -16,21 +16,55 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Check View Controller-->
         <scene sceneID="oUv-gp-51I">
             <objects>
-                <viewController id="C5H-9f-Fd6" sceneMemberID="viewController">
+                <viewController id="C5H-9f-Fd6" customClass="CheckViewController" customModule="BaristaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IeL-FC-foT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Correct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3B-zL-NJ1">
+                                <rect key="frame" x="33" y="135" width="130" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ThingsRegular" family="Things" pointSize="100"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="   |   Yours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCc-oF-rrt">
+                                <rect key="frame" x="161" y="134" width="186" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ThingsRegular" family="Things" pointSize="100"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuX-cN-X4b">
+                                <rect key="frame" x="33" y="263" width="153" height="402"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ThingsRegular" family="Things" pointSize="44"/>
+                                <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPc-hQ-IIE">
+                                <rect key="frame" x="214" y="263" width="153" height="402"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ThingsRegular" family="Things" pointSize="44"/>
+                                <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8xI-he-855"/>
                         <color key="backgroundColor" red="0.67131136859999996" green="0.37060134750000001" blue="0.21096117710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="agy-QX-BNN"/>
+                    <connections>
+                        <outlet property="correctOutlet" destination="YuX-cN-X4b" id="qLh-FQ-drX"/>
+                        <outlet property="yoursOutlet" destination="MPc-hQ-IIE" id="bCX-0T-PYo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5T-EQ-wVb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1060" y="-793"/>
+            <point key="canvasLocation" x="1055.7251908396945" y="-793.66197183098598"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="RVN-U6-Pf3">
@@ -332,6 +366,10 @@
                                 <rect key="frame" x="-14" y="325" width="440" height="461"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="syrup" translatesAutoresizingMaskIntoConstraints="NO" id="HEQ-To-oic">
+                                <rect key="frame" x="-10" y="319" width="428" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paper-cup" translatesAutoresizingMaskIntoConstraints="NO" id="gQe-5I-7c8">
                                 <rect key="frame" x="45" y="418" width="302" height="318"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -409,6 +447,7 @@
                     <connections>
                         <outlet property="addItemThing" destination="X6q-u1-ew6" id="pFQ-0H-PXI"/>
                         <outlet property="drinkOutlet" destination="tq5-YN-va6" id="1nd-Gw-y06"/>
+                        <outlet property="syrupThing" destination="HEQ-To-oic" id="yN9-2u-iYT"/>
                         <outlet property="titleOutlet" destination="Nut-0L-nSy" id="ptk-H6-x3S"/>
                     </connections>
                 </viewController>
@@ -591,7 +630,11 @@
         <image name="coffee-cup" width="512" height="512"/>
         <image name="paper-cup" width="512" height="512"/>
         <image name="questionmark.circle" catalog="system" width="128" height="123"/>
+        <image name="syrup" width="216" height="216"/>
         <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
