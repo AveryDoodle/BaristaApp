@@ -38,26 +38,28 @@ class DrinkTestViewController: UIViewController {
         let joinedString = things.joined(separator: "\n")
         drinkOutlet.text = "\(joinedString)"
         print(joinedString)
-        addItemThing.isHidden = false
-        syrupThing.isHidden = false
-        if things.count >= 2 {
-            if things.contains("Pumps"){
-                let showing = 0
-                
-                
-                switch showing{
-                case 0:
-                    syrupThing.isHidden = true
-                    print("showing Syrup")
-                case 1:
-                    addItemThing.isHidden = true
-                    print("nope")
-                default:
-                    addItemThing.isHidden = true
-                    print("nope")
+        addItemThing.isHidden = true
+        syrupThing.isHidden = true
+        if things.count >= 1 {
+            for sentence in things{
+                if sentence.contains("pumps"){
+                    let showing = 0
+                    print()
+                    
+                    switch showing{
+                    case 0:
+                        syrupThing.isHidden = false
+                        print("showing Syrup")
+                    case 1:
+                        addItemThing.isHidden = true
+                        print("nope")
+                    default:
+                        addItemThing.isHidden = true
+                        print("nope")
+                    }
+                } else{
+                    print("no")
                 }
-            } else{
-                print("no")
             }
            // addItemThing.isHidden = true
             
