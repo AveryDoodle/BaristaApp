@@ -179,6 +179,7 @@
                         <outlet property="tableOutlet" destination="SyU-9M-gWI" id="cTo-dr-eWa"/>
                         <segue destination="1hp-iM-HVh" kind="show" identifier="MoreDetail" id="8qu-9O-eMX"/>
                         <segue destination="v8G-L2-XD2" kind="show" id="FA8-Ti-XqV"/>
+                        <segue destination="1hp-iM-HVh" kind="show" identifier="toRecipe" id="y2X-u0-frA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ia1-Yh-xoZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -219,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="teF-uO-3ok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="249.61832061068702" y="736.61971830985919"/>
+            <point key="canvasLocation" x="257" y="770"/>
         </scene>
         <!--Add Quiz View Controller-->
         <scene sceneID="xYa-qa-XUz">
@@ -628,6 +629,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="H6x-fL-Fgp"/>
+        <segue reference="y2X-u0-frA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="checkmark.gobackward" catalog="system" width="119" height="128"/>

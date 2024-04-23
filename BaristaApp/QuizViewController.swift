@@ -14,7 +14,8 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
     var aQVC: AddQuizViewController!
     static var name = "test"
     var fDrinks = [Drink]()
-
+    var num = 0
+    
     override func viewDidLoad() {
         tableOutlet.dataSource = self
         tableOutlet.delegate = self
@@ -40,18 +41,24 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        performSegue(withIdentifier: "MoreDetail" , sender: nil)
+        num = indexPath.row
+        performSegue(withIdentifier: "toRecipe" , sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let nvc = segue.destination as? AddQuizViewController ?? nil
+        let rNvc = segue.destination as? DetailsViewController ?? nil
         
         if nvc != nil{
             let nvc = segue.destination as! AddQuizViewController
             nvc.drinks = fDrinks
             nvc.delegate = self
+        }else if rNvc != nil{
+            let rNvc = segue.destination as! DetailsViewController
+            rNvc.name = fDrinks[num].name
+        rNvc.ing = "Ingredients: \(rNvc.ing)\n\(fDrinks[num].syrup)\n\(fDrinks[num].milk)\n\(fDrinks[num].other)"
         }
+        
     }
     @IBAction func addAction(_ sender: UIBarButtonItem) {
        

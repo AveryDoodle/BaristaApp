@@ -30,10 +30,9 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     var tempSyrup = ""
     var tempMilk = ""
     var tempOther = ""
-<<<<<<< HEAD
+
     weak var delegate : QuizViewController!
-=======
->>>>>>> main
+
     
     var selectedSyrup = ""
     var selectedMilk = ""
@@ -106,7 +105,7 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     @IBAction func addMilk(_ sender: Any) {
         print("\(milkOutlet.text!) ounces of \(selectedMilk) milk")
-        AddQuizViewController.recipe.append("\(milkOutlet.text!) ounces of \(selectedMilk) milk")
+        //AddQuizViewController.recipe.append("\(milkOutlet.text!) ounces of \(selectedMilk) milk")
        
         tempMilk = "\(milkOutlet.text!) ounces of \(selectedMilk) milk"
         milkOutlet.text = " "
@@ -114,7 +113,7 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     @IBAction func addSyrup(_ sender: Any) {
         print("\(syrupOutlet.text!) pumps of \(selectedSyrup)")
-        AddQuizViewController.recipe.append("\(syrupOutlet.text!) pumps of \(selectedSyrup)")
+        //AddQuizViewController.recipe.append("\(syrupOutlet.text!) pumps of \(selectedSyrup)")
         tempSyrup = "\(syrupOutlet.text!) pumps of \(selectedSyrup)"
         syrupOutlet.text = " "
         
@@ -124,9 +123,10 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     @IBAction func finishAction(_ sender: Any) {
         print(AddQuizViewController.recipe)
-        AddQuizViewController.name.append(nameOutlet.text!)
+        //AddQuizViewController.name.append(nameOutlet.text!)
        
         drinks.append(Drink(name: nameOutlet.text!, syrup: tempSyrup, milk: tempMilk, other: tempOther))
+        
         nameOutlet.text = " "
         delegate.fDrinks = drinks
     }
@@ -134,7 +134,7 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     @IBAction func addOther(_ sender: Any) {
         print("\(OtherOutlet.text!) pumps of \(selectedThing)")
-        AddQuizViewController.recipe.append("\(OtherOutlet.text!) pumps of \(selectedThing)")
+       // AddQuizViewController.recipe.append("\(OtherOutlet.text!) pumps of \(selectedThing)")
         
         tempOther = "\(OtherOutlet.text!) pumps of \(selectedThing)"
         OtherOutlet.text = " "
