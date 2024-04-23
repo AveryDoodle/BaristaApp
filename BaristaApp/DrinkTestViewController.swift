@@ -24,6 +24,9 @@ class DrinkTestViewController: UIViewController {
 
     
     static var things = [""]
+    
+    static var correctRecipe = [""]
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
