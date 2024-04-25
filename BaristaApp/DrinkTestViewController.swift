@@ -19,19 +19,30 @@ class DrinkTestViewController: UIViewController {
     
     @IBOutlet weak var syrupThing: UIImageView!
     
+    @IBOutlet weak var milkThing: UIImageView!
+    
+    @IBOutlet weak var matchaThing: UIImageView!
+    
+    @IBOutlet weak var chaiThing: UIImageView!
+    
+    @IBOutlet weak var pinkThing: UIImageView!
+    
+    @IBOutlet weak var chocolateThing: UIImageView!
+    
+    
     
     let shouldShowImage = false
-
+    
     
     static var things = [""]
     
     static var correctRecipe = [""]
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,9 +54,14 @@ class DrinkTestViewController: UIViewController {
         print(joinedString)
         addItemThing.isHidden = true
         syrupThing.isHidden = true
+        milkThing.isHidden = true
+        matchaThing.isHidden = true
+        chaiThing.isHidden = true
+        pinkThing.isHidden = true
+        chocolateThing.isHidden = true
         if things.count >= 1 {
             for sentence in things{
-                if sentence.contains("pumps"){
+                if sentence.contains("Caramel"){
                     let showing = 0
                     print()
                     
@@ -54,37 +70,143 @@ class DrinkTestViewController: UIViewController {
                         syrupThing.isHidden = false
                         print("showing Syrup")
                     case 1:
-                        addItemThing.isHidden = true
+                        milkThing.isHidden = false
                         print("nope")
                     default:
                         addItemThing.isHidden = true
                         print("nope")
                     }
                 } else{
-                    print("no")
+                    for sentence in things{
+                        if sentence.contains("milk"){
+                            let showing = 1
+                            print()
+                            
+                            switch showing{
+                            case 0:
+                                syrupThing.isHidden = false
+                                print("showing Syrup")
+                            case 1:
+                                milkThing.isHidden = false
+                                print("showing milk")
+                            default:
+                                addItemThing.isHidden = true
+                                print("nope")
+                            }
+                        } else{
+                            for sentence in things{
+                                if sentence.contains("Matcha"){
+                                    let showing = 2
+                                    print()
+                                    
+                                    switch showing{
+                                    case 0:
+                                        syrupThing.isHidden = false
+                                        print("showing Syrup")
+                                    case 1:
+                                        milkThing.isHidden = false
+                                        print("showing milk")
+                                    case 2:
+                                        matchaThing.isHidden = false
+                                        print("showing matcha")
+                                    default:
+                                        addItemThing.isHidden = true
+                                        print("nope")
+                                    }
+                                } else{
+                                    for sentence in things{
+                                        if sentence.contains("Chai"){
+                                            let showing = 2
+                                            print()
+                                            
+                                            switch showing{
+                                            case 0:
+                                                syrupThing.isHidden = false
+                                                print("showing Syrup")
+                                            case 1:
+                                                milkThing.isHidden = false
+                                                print("showing milk")
+                                            case 2:
+                                                chaiThing.isHidden = false
+                                                print("showing chai")
+                                            default:
+                                                addItemThing.isHidden = true
+                                                print("nope")
+                                            }
+                                        } else {
+                                            for sentence in things{
+                                                if sentence.contains("Strawberry"){
+                                                    let showing = 2
+                                                    print()
+                                                    
+                                                    switch showing{
+                                                    case 0:
+                                                        syrupThing.isHidden = false
+                                                        print("showing Syrup")
+                                                    case 1:
+                                                        milkThing.isHidden = false
+                                                        print("showing milk")
+                                                    case 2:
+                                                        pinkThing.isHidden = false
+                                                        print("showing pink")
+                                                    default:
+                                                        addItemThing.isHidden = true
+                                                        print("nope")
+                                                    }
+                                                }else {
+                                                    for sentence in things{
+                                                        if sentence.contains("Chocolate"){
+                                                            let showing = 2
+                                                            print()
+                                                            
+                                                            switch showing{
+                                                            case 0:
+                                                                syrupThing.isHidden = false
+                                                                print("showing Syrup")
+                                                            case 1:
+                                                                milkThing.isHidden = false
+                                                                print("showing milk")
+                                                            case 2:
+                                                                chocolateThing.isHidden = false
+                                                                print("showing pink")
+                                                            default:
+                                                                addItemThing.isHidden = true
+                                                                print("nope")
+                                                            }
+                                                        } else {
+                                                            print("nothing")
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                // addItemThing.isHidden = true
+                                
+                                //
+                                //            if shouldShowImage {
+                                //
+                                //                addItemThing.isHidden = false
+                                //            } else {
+                                //
+                                //                addItemThing.isHidden = false
+                                //            }
+                            }       // drinkOutlet.text = "\(DrinkTestViewController.things)"
+                            print(DrinkTestViewController.things)
+                            print("correct recipe \(AddQuizViewController.recipe)")
+                        }
+                        
+                        //@IBAction func checkAction(_ sender: Any) {
+                        
+                    }
+                    
+                    
+                    
+                    
+                    
                 }
             }
-           // addItemThing.isHidden = true
-            
-//
-//            if shouldShowImage {
-//           
-//                addItemThing.isHidden = false
-//            } else {
-//           
-//                addItemThing.isHidden = false
-//            }
-        }       // drinkOutlet.text = "\(DrinkTestViewController.things)"
-        print(DrinkTestViewController.things)
-        print("correct recipe \(AddQuizViewController.recipe)")
+        }
     }
-    
-    @IBAction func checkAction(_ sender: Any) {
-        
-    }
-    
-    
-
-    
-
 }

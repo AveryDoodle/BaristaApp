@@ -17,9 +17,9 @@ class CheckViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        correctOutlet.text = ("correct recipe \(AddQuizViewController.recipe)")
-        yoursOutlet.text = ("\(DrinkTestViewController.things)")
+//
+//        correctOutlet.text = ("correct recipe \(AddQuizViewController.recipe)")
+//        yoursOutlet.text = ("\(DrinkTestViewController.things)")
     }
     
   
