@@ -13,15 +13,17 @@ class DetailsViewController: UIViewController {
     
     @IBOutlet weak var ingredientsOutlet: UILabel!
     
-
+    var name = ""
+    var ing = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        drinkNameOutlet.text = QuizViewController.name
+        drinkNameOutlet.text = name
+        ingredientsOutlet.text = ing
         //ingredientsOutlet.text = AddQuizViewController.recipe
         let things = AddQuizViewController.recipe
         let joinedString = things.joined(separator: "\n")
-        ingredientsOutlet.text = "\(joinedString)"
+      //  ingredientsOutlet.text = "\(joinedString)"
     }
     
     

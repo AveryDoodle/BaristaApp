@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LBC-7u-pnA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LBC-7u-pnA">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -38,14 +38,14 @@
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuX-cN-X4b">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuX-cN-X4b">
                                 <rect key="frame" x="33" y="263" width="153" height="402"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ThingsRegular" family="Things" pointSize="44"/>
                                 <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPc-hQ-IIE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPc-hQ-IIE">
                                 <rect key="frame" x="214" y="263" width="153" height="402"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ThingsRegular" family="Things" pointSize="44"/>
@@ -66,21 +66,40 @@
             </objects>
             <point key="canvasLocation" x="1055.7251908396945" y="-793.66197183098598"/>
         </scene>
-        <!--View Controller-->
+        <!--Help View Controller-->
         <scene sceneID="RVN-U6-Pf3">
             <objects>
-                <viewController id="BME-D9-La0" sceneMemberID="viewController">
+                <viewController id="BME-D9-La0" customClass="HelpViewController" customModule="BaristaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hRW-Bf-b3h">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgx-86-til">
+                                <rect key="frame" x="66" y="125" width="260" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ThingsRegular" family="Things" pointSize="100"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ra-an-SYM">
+                                <rect key="frame" x="36" y="240" width="324" height="533"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ThingsRegular" family="Things" pointSize="44"/>
+                                <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="n2A-Rm-4av"/>
                         <color key="backgroundColor" red="0.67131136859999996" green="0.37060134750000001" blue="0.21096117710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="pBU-6v-lpD"/>
+                    <connections>
+                        <outlet property="infoOutlet" destination="1Ra-an-SYM" id="Wu6-f6-b1O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fsg-se-OlE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1956" y="-794"/>
+            <point key="canvasLocation" x="1954.9618320610687" y="-794.36619718309862"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -170,13 +189,16 @@
                     <navigationItem key="navigationItem" id="SEs-KZ-Tib">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="9Af-wz-GrF">
                             <connections>
-                                <segue destination="v8G-L2-XD2" kind="show" id="H6x-fL-Fgp"/>
+                                <action selector="addAction:" destination="ujQ-9w-qFH" id="EH2-xB-yUF"/>
+                                <segue destination="v8G-L2-XD2" kind="show" identifier="toAdd" id="H6x-fL-Fgp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableOutlet" destination="SyU-9M-gWI" id="cTo-dr-eWa"/>
                         <segue destination="1hp-iM-HVh" kind="show" identifier="MoreDetail" id="8qu-9O-eMX"/>
+                        <segue destination="v8G-L2-XD2" kind="show" id="FA8-Ti-XqV"/>
+                        <segue destination="1hp-iM-HVh" kind="show" identifier="toRecipe" id="y2X-u0-frA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ia1-Yh-xoZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -217,7 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="teF-uO-3ok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="249.61832061068702" y="736.61971830985919"/>
+            <point key="canvasLocation" x="257" y="770"/>
         </scene>
         <!--Add Quiz View Controller-->
         <scene sceneID="xYa-qa-XUz">
@@ -366,8 +388,28 @@
                                 <rect key="frame" x="-14" y="325" width="440" height="461"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="milk" translatesAutoresizingMaskIntoConstraints="NO" id="J9J-q1-Fp7">
+                                <rect key="frame" x="-14" y="298" width="440" height="515"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="matcha" translatesAutoresizingMaskIntoConstraints="NO" id="imk-UJ-j2R">
+                                <rect key="frame" x="-22" y="298" width="453" height="454"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chai" translatesAutoresizingMaskIntoConstraints="NO" id="EBE-vX-mEh">
+                                <rect key="frame" x="-32" y="303" width="473" height="444"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinksyrup" translatesAutoresizingMaskIntoConstraints="NO" id="Tjh-PW-4nB">
+                                <rect key="frame" x="-22" y="303" width="453" height="449"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="syrup" translatesAutoresizingMaskIntoConstraints="NO" id="HEQ-To-oic">
                                 <rect key="frame" x="-10" y="319" width="428" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chocolate" translatesAutoresizingMaskIntoConstraints="NO" id="0lg-fO-yfF">
+                                <rect key="frame" x="-22" y="323" width="454" height="439"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paper-cup" translatesAutoresizingMaskIntoConstraints="NO" id="gQe-5I-7c8">
@@ -446,7 +488,12 @@
                     <navigationItem key="navigationItem" id="CZS-CA-vhV"/>
                     <connections>
                         <outlet property="addItemThing" destination="X6q-u1-ew6" id="pFQ-0H-PXI"/>
+                        <outlet property="chaiThing" destination="EBE-vX-mEh" id="7IU-IM-osg"/>
+                        <outlet property="chocolateThing" destination="0lg-fO-yfF" id="f5y-ta-3tf"/>
                         <outlet property="drinkOutlet" destination="tq5-YN-va6" id="1nd-Gw-y06"/>
+                        <outlet property="matchaThing" destination="imk-UJ-j2R" id="AIb-Vb-7DN"/>
+                        <outlet property="milkThing" destination="J9J-q1-Fp7" id="nxy-XP-hwV"/>
+                        <outlet property="pinkThing" destination="Tjh-PW-4nB" id="ICB-c2-h1u"/>
                         <outlet property="syrupThing" destination="HEQ-To-oic" id="yN9-2u-iYT"/>
                         <outlet property="titleOutlet" destination="Nut-0L-nSy" id="ptk-H6-x3S"/>
                     </connections>
@@ -624,11 +671,20 @@
             <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="H6x-fL-Fgp"/>
+        <segue reference="y2X-u0-frA"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="chai" width="216" height="216"/>
         <image name="checkmark.gobackward" catalog="system" width="119" height="128"/>
+        <image name="chocolate" width="216" height="216"/>
         <image name="coffee" width="216" height="216"/>
         <image name="coffee-cup" width="512" height="512"/>
+        <image name="matcha" width="216" height="216"/>
+        <image name="milk" width="216" height="216"/>
         <image name="paper-cup" width="512" height="512"/>
+        <image name="pinksyrup" width="216" height="216"/>
         <image name="questionmark.circle" catalog="system" width="128" height="123"/>
         <image name="syrup" width="216" height="216"/>
         <systemColor name="groupTableViewBackgroundColor">
