@@ -14,12 +14,13 @@ class CheckViewController: UIViewController {
     
     @IBOutlet weak var yoursOutlet: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+//
+//        correctOutlet.text = ("correct recipe \(AddQuizViewController.recipe)")
+//        yoursOutlet.text = ("\(DrinkTestViewController.things)")
     }
     
-
   
 }
