@@ -15,7 +15,7 @@ class HelpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        infoOutlet.text = ("Create your own recipes in the Add section of the app then go to the Quiz section and test your knownledge on the recipes to master your technique!")
     }
     
 
