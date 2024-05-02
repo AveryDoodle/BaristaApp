@@ -8,7 +8,7 @@
 import UIKit
 
 class QuizViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-   
+    
     @IBOutlet weak var tableOutlet: UITableView!
     
     var aQVC: AddQuizViewController!
@@ -22,8 +22,8 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableOutlet.dataSource = self
         tableOutlet.delegate = self
         super.viewDidLoad()
-
-       
+        
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         tableOutlet.reloadData()
@@ -63,9 +63,15 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     @IBAction func addAction(_ sender: UIBarButtonItem) {
-       
-            performSegue(withIdentifier: "toAdd", sender: self)
+        
+        performSegue(withIdentifier: "toAdd", sender: self)
+        
+        //        let encoder = JSONEncoder()
+        //          if let encoded = try? encoder.encode(fDrinks) {
+        //                           UserDefaults.standard.set(encoded, forKey: "theDrinks")
+        //                       }
+        //    }
+        
+        
     }
-    
-
 }
