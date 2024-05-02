@@ -380,6 +380,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="increaseSyrup:" destination="v8G-L2-XD2" eventType="touchUpInside" id="OQk-vf-LMz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJr-G0-QYs">
                                 <rect key="frame" x="252" y="464" width="42" height="35"/>
@@ -389,6 +392,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="increaseMilk:" destination="v8G-L2-XD2" eventType="touchUpInside" id="CNq-E3-r4I"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O40-HU-JS8">
                                 <rect key="frame" x="252" y="634" width="42" height="35"/>
@@ -398,6 +404,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="increaseOther:" destination="v8G-L2-XD2" eventType="touchUpInside" id="Vrc-nO-PE2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBf-eg-Bmt">
                                 <rect key="frame" x="74" y="282" width="42" height="35"/>
@@ -407,6 +416,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="subtractSyrup:" destination="v8G-L2-XD2" eventType="touchUpInside" id="wW0-W1-uPv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="It3-Aw-vxK">
                                 <rect key="frame" x="76" y="464" width="42" height="35"/>
@@ -416,6 +428,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="subtractMilk:" destination="v8G-L2-XD2" eventType="touchUpInside" id="meD-6Q-Pr3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBT-6u-8YC">
                                 <rect key="frame" x="76" y="635" width="42" height="35"/>
@@ -425,6 +440,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="subtractOther:" destination="v8G-L2-XD2" eventType="touchUpInside" id="1Ue-4F-tRH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9au-UQ-0Zb">
                                 <rect key="frame" x="159" y="332" width="0.0" height="0.0"/>
@@ -448,17 +466,12 @@
                     <connections>
                         <outlet property="OtherOutlet" destination="6hw-dh-cNN" id="Mo0-In-7mn"/>
                         <outlet property="OtherPickerView" destination="2Ih-Y5-hgc" id="vUF-hb-Dcb"/>
-                        <outlet property="addOther" destination="O40-HU-JS8" id="1Xg-Ku-jyN"/>
-                        <outlet property="addSyrup" destination="BKM-47-Yrl" id="1uz-9k-ebW"/>
                         <outlet property="milkOutlet" destination="BFc-u8-6yM" id="Vy3-3Z-NdX"/>
                         <outlet property="milkPickerView" destination="iUw-cf-2Bl" id="Bo0-w8-usX"/>
                         <outlet property="nameOutlet" destination="jpR-Ac-gKd" id="7dy-Ba-Uex"/>
                         <outlet property="newMilkOutlet" destination="ftt-8h-SSt" id="8w7-Qx-LiS"/>
                         <outlet property="newOtherOutlet" destination="gW5-u2-oIQ" id="62y-vO-zg2"/>
                         <outlet property="newSyrupOutlet" destination="bME-Fi-WW5" id="Z3Q-l3-Qks"/>
-                        <outlet property="subtractMilk" destination="It3-Aw-vxK" id="1xQ-X9-Ano"/>
-                        <outlet property="subtractOther" destination="zBT-6u-8YC" id="dPO-5U-W3C"/>
-                        <outlet property="subtractSyrup" destination="XBf-eg-Bmt" id="lW2-ol-Or1"/>
                         <outlet property="syrupOutlet" destination="eP6-B3-hmF" id="R0P-rp-CeL"/>
                         <outlet property="syrupPickerView" destination="Kpc-ZI-VAq" id="2iE-CC-V2W"/>
                     </connections>
