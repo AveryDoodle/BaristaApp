@@ -46,7 +46,14 @@ class DrinkTestViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+//        if let items = UserDefaults.standard.data(forKey: "theDrinks") {
+//                        let decoder = JSONDecoder()
+//                        if let decoded = try? decoder.decode([Drink].self, from: items) {
+//                            DrinkTestViewController.correctRecipe = decoded
+//                        }
+//                }
         titleOutlet.text = "Drink: \(AddQuizViewController.name)!"
+        
         //print(titleOutlet.text!)
         let things = DrinkTestViewController.things
         let joinedString = things.joined(separator: "\n")

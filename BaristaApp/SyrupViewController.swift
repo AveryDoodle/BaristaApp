@@ -55,6 +55,7 @@ class SyrupViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         var pumps = pumpsOutlet.text!
         pumpsOutlet.text = " "
         DrinkTestViewController.things.append(("\(pumps) pumps of \(selectedSyrup)"))
+        pumpsOutlet.resignFirstResponder()
     }
     
     

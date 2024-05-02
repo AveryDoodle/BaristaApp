@@ -14,6 +14,9 @@ class CheckViewController: UIViewController {
     
     @IBOutlet weak var yoursOutlet: UILabel!
     
+    @IBOutlet weak var gradeOutlet: UILabel!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

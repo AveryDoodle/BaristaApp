@@ -23,6 +23,25 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     @IBOutlet weak var OtherOutlet: UITextField!
     
+    @IBOutlet weak var subtractSyrup: UIButton!
+    
+    @IBOutlet weak var newSyrupOutlet: UILabel!
+    
+    @IBOutlet weak var addSyrup: UIButton!
+    
+    @IBOutlet weak var subtractMilk: UIButton!
+    
+    @IBOutlet weak var newMilkOutlet: UILabel!
+    
+    @IBOutlet weak var addMilk: UIButton!
+    
+    @IBOutlet weak var subtractOther: UIButton!
+    
+    @IBOutlet weak var newOtherOutlet: UILabel!
+    
+    @IBOutlet weak var addOther: UIButton!
+    
+    
     var qVC: QuizViewController!
     static var recipe = [""]
     static var name = [""]
@@ -109,6 +128,7 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
        
         tempMilk = "\(milkOutlet.text!) ounces of \(selectedMilk) milk"
         milkOutlet.text = " "
+        milkOutlet.resignFirstResponder()
     }
     
     @IBAction func addSyrup(_ sender: Any) {
@@ -116,7 +136,7 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         //AddQuizViewController.recipe.append("\(syrupOutlet.text!) pumps of \(selectedSyrup)")
         tempSyrup = "\(syrupOutlet.text!) pumps of \(selectedSyrup)"
         syrupOutlet.text = " "
-        
+        syrupOutlet.resignFirstResponder()
     }
     
 
@@ -129,6 +149,7 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         
         nameOutlet.text = " "
         delegate.fDrinks = drinks
+        nameOutlet.resignFirstResponder()
     }
     
     
@@ -138,6 +159,7 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         
         tempOther = "\(OtherOutlet.text!) pumps of \(selectedThing)"
         OtherOutlet.text = " "
+        OtherOutlet.resignFirstResponder()
     }
     
     

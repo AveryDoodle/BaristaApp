@@ -6,7 +6,7 @@
 //
 
 import Foundation
-public class Drink{
+public class Drink: Codable{
     
     var name : String
     var syrup : String

@@ -8,7 +8,7 @@
 import UIKit
 
 class QuizViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-   
+    
     @IBOutlet weak var tableOutlet: UITableView!
     
     var aQVC: AddQuizViewController!
@@ -20,8 +20,8 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableOutlet.dataSource = self
         tableOutlet.delegate = self
         super.viewDidLoad()
-
-       
+        
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         tableOutlet.reloadData()
@@ -35,8 +35,8 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "MyCell")!
         cell.textLabel?.text = fDrinks[indexPath.row].name
-       // QuizViewController.name = AddQuizViewController.name[indexPath.row]
-      
+        // QuizViewController.name = AddQuizViewController.name[indexPath.row]
+        
         return cell
     }
     
@@ -56,14 +56,20 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
         }else if rNvc != nil{
             let rNvc = segue.destination as! DetailsViewController
             rNvc.name = fDrinks[num].name
-        rNvc.ing = "Ingredients: \(rNvc.ing)\n\(fDrinks[num].syrup)\n\(fDrinks[num].milk)\n\(fDrinks[num].other)"
+            rNvc.ing = "Ingredients: \(rNvc.ing)\n\(fDrinks[num].syrup)\n\(fDrinks[num].milk)\n\(fDrinks[num].other)"
         }
         
     }
     @IBAction func addAction(_ sender: UIBarButtonItem) {
-       
-            performSegue(withIdentifier: "toAdd", sender: self)
+        
+        performSegue(withIdentifier: "toAdd", sender: self)
+        
+        //        let encoder = JSONEncoder()
+        //          if let encoded = try? encoder.encode(fDrinks) {
+        //                           UserDefaults.standard.set(encoded, forKey: "theDrinks")
+        //                       }
+        //    }
+        
+        
     }
-    
-
 }
