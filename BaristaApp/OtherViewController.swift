@@ -54,6 +54,8 @@ class OtherViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         var other = otherOutlet.text!
         otherOutlet.text = " "
         DrinkTestViewController.things.append(("\(other) of \(selectedThing)"))
+      
+        
     }
     
   

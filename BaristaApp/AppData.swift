@@ -6,3 +6,11 @@
 //
 
 import Foundation
+public class AppData{
+    
+    static var drinks = [Drink]()
+    static var madeDrinks = [Drink]()
+   
+    
+    
+}

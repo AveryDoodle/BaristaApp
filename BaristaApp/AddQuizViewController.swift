@@ -128,7 +128,8 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         drinks.append(Drink(name: nameOutlet.text!, syrup: tempSyrup, milk: tempMilk, other: tempOther))
         
         nameOutlet.text = " "
-        delegate.fDrinks = drinks
+       // delegate.fDrinks = drinks
+        AppData.drinks = drinks
     }
     
     

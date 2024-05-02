@@ -30,6 +30,7 @@
 		1D8C41072BD1643600108A74 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8C41062BD1643600108A74 /* CheckViewController.swift */; };
 		1D8C410B2BD8012100108A74 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8C410A2BD8012100108A74 /* HelpViewController.swift */; };
 		C895FBF72BCEC4AB00C6E2D7 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = C895FBF62BCEC4AB00C6E2D7 /* Drink.swift */; };
+		C8F7BB652BE28C32001D3253 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F7BB642BE28C32001D3253 /* AppData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		1D8C41062BD1643600108A74 /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
 		1D8C410A2BD8012100108A74 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		C895FBF62BCEC4AB00C6E2D7 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		C8F7BB642BE28C32001D3253 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				1D5AFD0C2B98BDD8005FA285 /* SceneDelegate.swift */,
 				1D5AFD0E2B98BDD8005FA285 /* ViewController.swift */,
 				1D5AFD102B98BDD8005FA285 /* Main.storyboard */,
+				C8F7BB642BE28C32001D3253 /* AppData.swift */,
 				1D8C410A2BD8012100108A74 /* HelpViewController.swift */,
 				1D8C41062BD1643600108A74 /* CheckViewController.swift */,
 				C895FBF62BCEC4AB00C6E2D7 /* Drink.swift */,
@@ -317,6 +320,7 @@
 				1D5AFD0D2B98BDD8005FA285 /* SceneDelegate.swift in Sources */,
 				C895FBF72BCEC4AB00C6E2D7 /* Drink.swift in Sources */,
 				1D5AFD482B9F519A005FA285 /* MilkViewController.swift in Sources */,
+				C8F7BB652BE28C32001D3253 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
