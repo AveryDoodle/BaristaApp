@@ -23,23 +23,13 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     @IBOutlet weak var OtherOutlet: UITextField!
     
-    @IBOutlet weak var subtractSyrup: UIButton!
     
     @IBOutlet weak var newSyrupOutlet: UILabel!
-    
-    @IBOutlet weak var addSyrup: UIButton!
-    
-    @IBOutlet weak var subtractMilk: UIButton!
+      
     
     @IBOutlet weak var newMilkOutlet: UILabel!
     
-    @IBOutlet weak var addMilk: UIButton!
-    
-    @IBOutlet weak var subtractOther: UIButton!
-    
     @IBOutlet weak var newOtherOutlet: UILabel!
-    
-    @IBOutlet weak var addOther: UIButton!
     
     
     var qVC: QuizViewController!
@@ -148,7 +138,9 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         drinks.append(Drink(name: nameOutlet.text!, syrup: tempSyrup, milk: tempMilk, other: tempOther))
         
         nameOutlet.text = " "
-        delegate.fDrinks = drinks
+       // delegate.fDrinks = drinks
+        AppData.drinks = drinks
+        //delegate.fDrinks = drinks
         nameOutlet.resignFirstResponder()
     }
     
@@ -161,6 +153,25 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         OtherOutlet.text = " "
         OtherOutlet.resignFirstResponder()
     }
+    
+    @IBAction func subtractSyrup(_ sender: Any) {
+    }
+    
+    @IBAction func increaseSyrup(_ sender: Any) {
+    }
+    
+    @IBAction func subtractMilk(_ sender: Any) {
+    }
+    
+    @IBAction func increaseMilk(_ sender: Any) {
+    }
+    
+    @IBAction func subtractOther(_ sender: Any) {
+    }
+    
+    @IBAction func increaseOther(_ sender: Any) {
+    }
+    
     
     
 }

@@ -12,6 +12,8 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableOutlet: UITableView!
     
     var aQVC: AddQuizViewController!
+    var dTVC: DrinkTestViewController!
+    
     static var name = "test"
     var fDrinks = [Drink]()
     var num = 0
@@ -29,14 +31,14 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fDrinks.count
+        return AppData.drinks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "MyCell")!
-        cell.textLabel?.text = fDrinks[indexPath.row].name
-        // QuizViewController.name = AddQuizViewController.name[indexPath.row]
-        
+        cell.textLabel?.text = AppData.drinks[indexPath.row].name
+       // QuizViewController.name = AddQuizViewController.name[indexPath.row]
+      
         return cell
     }
     
@@ -51,12 +53,12 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if nvc != nil{
             let nvc = segue.destination as! AddQuizViewController
-            nvc.drinks = fDrinks
+            nvc.drinks = AppData.drinks
             nvc.delegate = self
         }else if rNvc != nil{
             let rNvc = segue.destination as! DetailsViewController
-            rNvc.name = fDrinks[num].name
-            rNvc.ing = "Ingredients: \(rNvc.ing)\n\(fDrinks[num].syrup)\n\(fDrinks[num].milk)\n\(fDrinks[num].other)"
+            rNvc.name = AppData.drinks[num].name
+            rNvc.ing = "Ingredients: \(rNvc.ing)\n\(AppData.drinks[num].syrup)\n\(AppData.drinks[num].milk)\n\(AppData.drinks[num].other)"
         }
         
     }

@@ -35,30 +35,29 @@ class DrinkTestViewController: UIViewController {
     
     
     static var things = [""]
+   
     
     static var correctRecipe = [""]
-    
+    var qVC: QuizViewController!
+    //var drinks = [Drink]()
+    weak var delegate : QuizViewController!
+    var int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        //delegate.fDrinks = drinks
+        titleOutlet.text = "Drink: \(AppData.drinks[int].name)"
     }
-    
+    //titleOutlet.text = "Drink: \(drinks[0])!"
     override func viewWillAppear(_ animated: Bool) {
-//        if let items = UserDefaults.standard.data(forKey: "theDrinks") {
-//                        let decoder = JSONDecoder()
-//                        if let decoded = try? decoder.decode([Drink].self, from: items) {
-//                            DrinkTestViewController.correctRecipe = decoded
-//                        }
-//                }
-        titleOutlet.text = "Drink: \(AddQuizViewController.name)!"
-        
+       // titleOutlet.text = "Drink: \(AddQuizViewController.name)!"
         //print(titleOutlet.text!)
         let things = DrinkTestViewController.things
         let joinedString = things.joined(separator: "\n")
         drinkOutlet.text = "\(joinedString)"
         print(joinedString)
+        
+        
         addItemThing.isHidden = true
         syrupThing.isHidden = true
         milkThing.isHidden = true
