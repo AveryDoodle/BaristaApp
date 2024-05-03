@@ -25,10 +25,10 @@ class CheckViewController: UIViewController {
         correctOutlet.text = ("correct recipe \(AddQuizViewController.recipe)")
         yoursOutlet.text = ("\(DrinkTestViewController.things)")
         if AddQuizViewController.recipe == DrinkTestViewController.things {
-            print("Correct!")
+            gradeOutlet.text = ("Correct")
         }
         else {
-            print("Wrong!")
+            gradeOutlet.text = ("Wrong")
         }
 
 //
