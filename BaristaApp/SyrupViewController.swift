@@ -14,6 +14,12 @@ class SyrupViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     @IBOutlet weak var pumpsOutlet: UITextField!
     
+    @IBOutlet weak var quantityOutlet: UILabel!
+    
+    
+    var total = 0
+    
+    
     
     static var Syrups = ["Vanilla", "Caramel", "Blueberry", "Mint", "Chocolate", "Strawberry"]
     var selectedSyrup = ""
@@ -22,6 +28,7 @@ class SyrupViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         super.viewDidLoad()
 
        syrupPickerView.delegate = self
+        quantityOutlet.text = "\(total)"
     }
     
 
@@ -51,13 +58,25 @@ class SyrupViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     }
 
     @IBAction func addAction(_ sender: Any) {
-        print("\(pumpsOutlet.text!) pumps of \(selectedSyrup)")
-        var pumps = pumpsOutlet.text!
-        pumpsOutlet.text = " "
-        DrinkTestViewController.things.append(("\(pumps) pumps of \(selectedSyrup)"))
-        pumpsOutlet.resignFirstResponder()
+        print("\(total) pumps of \(selectedSyrup)")
+        //var pumps = pumpsOutlet.text!
+        
+        DrinkTestViewController.things.append(("\(total) pumps of \(selectedSyrup)"))
+        
+        total = 0
+        quantityOutlet.text = "\(total)"
     }
     
+    @IBAction func decrease(_ sender: Any) {
+        total = total - 1
+        quantityOutlet.text = "\(total)"
+        
+    }
+    
+    @IBAction func increase(_ sender: Any) {
+        total = total + 1
+        quantityOutlet.text = "\(total)"
+    }
     
     
 }
