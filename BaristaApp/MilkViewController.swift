@@ -53,6 +53,9 @@ class MilkViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         var milk = fractionOutlet.text!
         fractionOutlet.text = " "
         DrinkTestViewController.things.append(("\(milk) ounces of \(selectedMilk) milk"))
+        
+        AppData.madeDrinks[AppData.int].milk = "\(milk) ounces of \(selectedMilk) milk"
+        
         fractionOutlet.resignFirstResponder()
     }
     

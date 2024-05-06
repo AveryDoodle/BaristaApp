@@ -54,7 +54,8 @@ class SyrupViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         print("\(pumpsOutlet.text!) pumps of \(selectedSyrup)")
         var pumps = pumpsOutlet.text!
         pumpsOutlet.text = " "
-        DrinkTestViewController.things.append(("\(pumps) pumps of \(selectedSyrup)"))
+        //DrinkTestViewController.things.append(("\(pumps) pumps of \(selectedSyrup)"))
+        AppData.madeDrinks[AppData.int].syrup = "\(pumps) pumps of \(selectedSyrup)"
         pumpsOutlet.resignFirstResponder()
     }
     
