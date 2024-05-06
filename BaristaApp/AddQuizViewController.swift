@@ -26,7 +26,6 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     @IBOutlet weak var newSyrupOutlet: UILabel!
       
-    
     @IBOutlet weak var newMilkOutlet: UILabel!
     
     @IBOutlet weak var newOtherOutlet: UILabel!
@@ -39,6 +38,9 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     var tempSyrup = ""
     var tempMilk = ""
     var tempOther = ""
+    var pumps = 0
+    var ounces = 0
+    var others = 0
 
     weak var delegate : QuizViewController!
 
@@ -56,12 +58,24 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
 
         syrupPickerView.delegate = self
         milkPickerView.delegate = self
+        
+        newOtherOutlet.text = "\(others)"
+        newMilkOutlet.text = "\(ounces)"
+        newSyrupOutlet.text = "\(pumps)"
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+                view.addGestureRecognizer(tapGesture)
     }
     
     //syrup picker
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
+    
+    @objc func dismissKeyboard() {
+           // Resign first responder status
+           nameOutlet.resignFirstResponder()
+       }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
 //        if pickerView.tag == 1{
@@ -113,20 +127,21 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     
     @IBAction func addMilk(_ sender: Any) {
-        print("\(milkOutlet.text!) ounces of \(selectedMilk) milk")
-        //AddQuizViewController.recipe.append("\(milkOutlet.text!) ounces of \(selectedMilk) milk")
-       
-        tempMilk = "\(milkOutlet.text!) ounces of \(selectedMilk) milk"
-        milkOutlet.text = " "
-        milkOutlet.resignFirstResponder()
+        print("\(ounces) ounces of \(selectedMilk) milk")
+        tempMilk.append("\(ounces) ounces of \(selectedMilk) milk \n")
+        ounces = 0
+        newMilkOutlet.text = "\(ounces)"
+     
     }
     
     @IBAction func addSyrup(_ sender: Any) {
-        print("\(syrupOutlet.text!) pumps of \(selectedSyrup)")
-        //AddQuizViewController.recipe.append("\(syrupOutlet.text!) pumps of \(selectedSyrup)")
-        tempSyrup = "\(syrupOutlet.text!) pumps of \(selectedSyrup)"
-        syrupOutlet.text = " "
-        syrupOutlet.resignFirstResponder()
+        print("\(pumps) pumps of \(selectedSyrup)")
+        tempSyrup.append("\(pumps) pumps of \(selectedSyrup) \n")
+        pumps = 0
+       
+        newSyrupOutlet.text = "\(pumps)"
+
+       
     }
     
 
@@ -146,30 +161,41 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     
     @IBAction func addOther(_ sender: Any) {
-        print("\(OtherOutlet.text!) pumps of \(selectedThing)")
-       // AddQuizViewController.recipe.append("\(OtherOutlet.text!) pumps of \(selectedThing)")
+        print("\(others) pumps of \(selectedThing)")
+        tempOther.append("\(others) pumps of \(selectedThing) \n")
+        others = 0
         
-        tempOther = "\(OtherOutlet.text!) pumps of \(selectedThing)"
-        OtherOutlet.text = " "
-        OtherOutlet.resignFirstResponder()
+        newOtherOutlet.text = "\(others)"
     }
     
     @IBAction func subtractSyrup(_ sender: Any) {
+        pumps = pumps - 1
+        newSyrupOutlet.text = "\(pumps)"
     }
     
     @IBAction func increaseSyrup(_ sender: Any) {
+        pumps = pumps + 1
+        newSyrupOutlet.text = "\(pumps)"
     }
     
     @IBAction func subtractMilk(_ sender: Any) {
+        ounces = ounces - 1
+        newMilkOutlet.text = "\(ounces)"
     }
     
     @IBAction func increaseMilk(_ sender: Any) {
+        ounces = ounces + 1
+        newMilkOutlet.text = "\(ounces)"
     }
     
     @IBAction func subtractOther(_ sender: Any) {
+        others = others - 1
+        newOtherOutlet.text = "\(others)"
     }
     
     @IBAction func increaseOther(_ sender: Any) {
+        others = others + 1
+        newOtherOutlet.text = "\(others)"
     }
     
     

@@ -13,6 +13,10 @@ class MilkViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     @IBOutlet weak var fractionOutlet: UITextField!
     
+    @IBOutlet weak var quantityOutlet: UILabel!
+    
+    var total = 0
+    
     static var Milks = ["Moon", "Skim", "Whole", "Oat", "Almond"]
      var selectedMilk = ""
     
@@ -20,6 +24,7 @@ class MilkViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         super.viewDidLoad()
 
         milkPickerView.delegate = self
+        quantityOutlet.text = "\(total)"
     }
     
 
@@ -49,14 +54,24 @@ class MilkViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     @IBAction func addAction(_ sender: Any) {
-        print("\(fractionOutlet.text!) ounces of \(selectedMilk) milk")
-        var milk = fractionOutlet.text!
-        fractionOutlet.text = " "
-        DrinkTestViewController.things.append(("\(milk) ounces of \(selectedMilk) milk"))
+        print("\(total) ounces of \(selectedMilk) milk")
+       // var milk = fractionOutlet.text!
         
-        AppData.madeDrinks[AppData.int].milk = "\(milk) ounces of \(selectedMilk) milk"
+        DrinkTestViewController.things.append(("\(total) ounces of \(selectedMilk) milk"))
+       
+        total = 0
+        quantityOutlet.text = "\(total)"
+    }
+    
+    @IBAction func decrease(_ sender: Any) {
+        total = total - 1
+        quantityOutlet.text = "\(total)"
         
-        fractionOutlet.resignFirstResponder()
+    }
+    
+    @IBAction func increase(_ sender: Any) {
+        total = total + 1
+        quantityOutlet.text = "\(total)"
     }
     
 

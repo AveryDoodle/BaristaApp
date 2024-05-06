@@ -14,6 +14,11 @@ class OtherViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     @IBOutlet weak var otherOutlet: UITextField!
     
+    @IBOutlet weak var quantityOutlet: UILabel!
+    
+    var total = 0
+    
+    
     
     static var Other = ["Cinnamon", "Matcha", "Chai", "tests", "test"]
      var selectedThing = ""
@@ -22,6 +27,7 @@ class OtherViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         super.viewDidLoad()
 
         otherPickerView.delegate = self
+        quantityOutlet.text = "\(total)"
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -50,12 +56,23 @@ class OtherViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     }
 
     @IBAction func addAction(_ sender: Any) {
-        print("\(otherOutlet.text!) of \(selectedThing)")
+        print("\(total) of \(selectedThing)")
         var other = otherOutlet.text!
-        otherOutlet.text = " "
-        DrinkTestViewController.things.append(("\(other) of \(selectedThing)"))
-        AppData.madeDrinks[AppData.int].other = "\(other) of \(selectedThing)"
-        otherOutlet.resignFirstResponder()
+       
+        DrinkTestViewController.things.append(("\(total) of \(selectedThing)"))
+        
+        total = 0
+        quantityOutlet.text = "\(total)"
+    }
+    
+    @IBAction func decrease(_ sender: Any) {
+        total = total - 1
+        quantityOutlet.text = "\(total)"
+    }
+    
+    @IBAction func increase(_ sender: Any) {
+        total = total + 1
+        quantityOutlet.text = "\(total)"
     }
     
   

@@ -22,6 +22,16 @@ class CheckViewController: UIViewController {
         super.viewDidLoad()
 
 
+        correctOutlet.text = ("correct recipe \(AddQuizViewController.recipe)")
+        yoursOutlet.text = ("\(DrinkTestViewController.things)")
+        if AddQuizViewController.recipe == DrinkTestViewController.things {
+            gradeOutlet.text = ("Correct")
+        }
+        else {
+            gradeOutlet.text = ("Wrong")
+        }
+
+//
 //        correctOutlet.text = ("correct recipe \(AddQuizViewController.recipe)")
 //        yoursOutlet.text = ("\(DrinkTestViewController.things)")
 //        if AddQuizViewController.recipe == DrinkTestViewController.things {
