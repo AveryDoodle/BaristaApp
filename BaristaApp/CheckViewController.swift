@@ -40,8 +40,8 @@ class CheckViewController: UIViewController {
 //        else {
 //            print("Wrong!")
 //        }
-        correctOutlet.text = "\(AppData.drinks[AppData.int].name)/n\(AppData.drinks[AppData.int].milk)/n\(AppData.drinks[AppData.int].syrup)/n\(AppData.drinks[AppData.int].other)"
-        yoursOutlet.text = "\(AppData.madeDrinks[AppData.int].name)/n\(AppData.madeDrinks[AppData.int].milk)/n\(AppData.madeDrinks[AppData.int].syrup)/n\(AppData.madeDrinks[AppData.int].other)"
+        correctOutlet.text = "\(AppData.drinks[AppData.int].name)\n\(AppData.drinks[AppData.int].milk)\n\(AppData.drinks[AppData.int].syrup)\n\(AppData.drinks[AppData.int].other)"
+        yoursOutlet.text = "\(Create.d1.name)\n\(Create.d1.milk)\n\(Create.d1.syrup)\n\(Create.d1.other)"
 
 
 

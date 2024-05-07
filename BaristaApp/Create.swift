@@ -7,7 +7,10 @@
 
 import Foundation
 public class Create{
-    
-    var d1 = AppData.madeDrinks[0]
+    static var name = ""
+    static var syrup = ""
+    static var milk = ""
+    static var other = ""
+    static var d1 = Drink(name: name, syrup: syrup, milk: milk, other: other)
     
 }

@@ -57,8 +57,8 @@ class OtherViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
 
     @IBAction func addAction(_ sender: Any) {
         print("\(total) of \(selectedThing)")
-        var other = otherOutlet.text!
-       
+        var other = "\(total) of \(selectedThing)"
+        Create.other = other
         DrinkTestViewController.things.append(("\(total) of \(selectedThing)"))
         
         total = 0

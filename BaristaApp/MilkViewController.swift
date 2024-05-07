@@ -55,8 +55,8 @@ class MilkViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     @IBAction func addAction(_ sender: Any) {
         print("\(total) ounces of \(selectedMilk) milk")
-       // var milk = fractionOutlet.text!
-        
+        var milk = "\(total) ounces of \(selectedMilk) milk"
+        Create.milk = milk
         DrinkTestViewController.things.append(("\(total) ounces of \(selectedMilk) milk"))
        
         total = 0
