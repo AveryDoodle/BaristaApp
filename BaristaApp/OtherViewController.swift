@@ -20,7 +20,7 @@ class OtherViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     
     
-    static var Other = ["Cinnamon", "Matcha", "Chai", "tests", "test"]
+    static var Other = ["Cinnamon", "Matcha", "Chai"]
      var selectedThing = ""
     
     override func viewDidLoad() {

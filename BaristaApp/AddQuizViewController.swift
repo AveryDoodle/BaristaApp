@@ -58,6 +58,7 @@ class AddQuizViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
 
         syrupPickerView.delegate = self
         milkPickerView.delegate = self
+        OtherPickerView.delegate = self
         
         newOtherOutlet.text = "\(others)"
         newMilkOutlet.text = "\(ounces)"
