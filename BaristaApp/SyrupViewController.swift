@@ -59,8 +59,8 @@ class SyrupViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
 
     @IBAction func addAction(_ sender: Any) {
         print("\(total) pumps of \(selectedSyrup)")
-        //var pumps = pumpsOutlet.text!
-        
+        var pumps = "\(total) pumps of \(selectedSyrup)"
+        Create.syrup = pumps
         DrinkTestViewController.things.append(("\(total) pumps of \(selectedSyrup)"))
         
         total = 0
@@ -77,6 +77,7 @@ class SyrupViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         total = total + 1
         quantityOutlet.text = "\(total)"
     }
+    
     
     
 }

@@ -34,8 +34,22 @@ class CheckViewController: UIViewController {
 //
 //        correctOutlet.text = ("correct recipe \(AddQuizViewController.recipe)")
 //        yoursOutlet.text = ("\(DrinkTestViewController.things)")
+//        if AddQuizViewController.recipe == DrinkTestViewController.things {
+//            print("Correct!")
+//        }
+//        else {
+//            print("Wrong!")
+//        }
+        correctOutlet.text = "\(AppData.drinks[AppData.int].name)\n\(AppData.drinks[AppData.int].milk)\n\(AppData.drinks[AppData.int].syrup)\n\(AppData.drinks[AppData.int].other)"
+        yoursOutlet.text = "\(Create.d1.name)\n\(Create.d1.milk)\n\(Create.d1.syrup)\n\(Create.d1.other)"
+
+
+
 
     }
-    
+    override func viewDidDisappear(_ animated: Bool) {
+        print("leaving screen 2")
+        AppData.int = AppData.int + 1
+    }
   
 }

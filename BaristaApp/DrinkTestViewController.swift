@@ -174,13 +174,13 @@ class DrinkTestViewController: UIViewController {
                                                                 print("showing milk")
                                                             case 2:
                                                                 chocolateThing.isHidden = false
-                                                                print("showing pink")
+    print("showing pink")
                                                             default:
-                                                                addItemThing.isHidden = true
-                                                                print("nope")
+    addItemThing.isHidden = true
+    print("nope")
                                                             }
                                                         } else {
-                                                            print("nothing")
+    print("nothing")
                                                         }
                                                     }
                                                 }
@@ -188,31 +188,30 @@ class DrinkTestViewController: UIViewController {
                                         }
                                     }
                                 }
-                                // addItemThing.isHidden = true
-                                
-                                //
-                                //            if shouldShowImage {
-                                //
-                                //                addItemThing.isHidden = false
-                                //            } else {
-                                //
-                                //                addItemThing.isHidden = false
-                                //            }
-                            }       // drinkOutlet.text = "\(DrinkTestViewController.things)"
-                            print(DrinkTestViewController.things)
-                            print("correct recipe \(AddQuizViewController.recipe)")
+                               
+                            }
+    print(DrinkTestViewController.things)
+    print("correct recipe \(AddQuizViewController.recipe)")
                         }
-                        
-                        //@IBAction func checkAction(_ sender: Any) {
-                        
                     }
-                    
-                    
-                    
-                    
-                    
                 }
             }
         }
     }
+    
+    
+    
+    @IBAction func checkerAction(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "toCheck", sender: nil)
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
 }
